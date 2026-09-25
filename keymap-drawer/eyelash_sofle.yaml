@@ -125,7 +125,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: NumPad, h: toggle}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -252,11 +252,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - KP 0
   - KP 0
   - KP DOT
@@ -317,15 +317,18 @@ layers:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {type: held}
+  - {t: '[cfg]', h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {type: held}
+  - {t: '[cfg]', h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
 combos:
-- p: [60, 59]
-  k: {t: NumPad, h: toggle}
+- p: [61, 59]
+  k: {t: '[cfg]', h: toggle}
   l: [L-1]
+- p: [57, 55]
+  k: {t: '[cfg]', h: toggle}
+  l: [L-2]
