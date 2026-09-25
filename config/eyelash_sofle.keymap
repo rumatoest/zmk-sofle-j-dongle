@@ -64,9 +64,9 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        kbd-config {
+        to-numpad {
             if-layers = <1 2>;
-            then-layer = <4>;
+            then-layer = <3>;
         };
     };
 
@@ -76,10 +76,16 @@
     combos {
         compatible = "zmk,combos";
 
-        num-pad-on {
-            bindings = <&to 3>;
-            key-positions = <60 59>;
+        tog-cfg-1 {
+            bindings = <&tog 4>;
+            key-positions = <61 59>;
             layers = <1>;
+        };
+
+        tog-cfg-2 {
+            bindings = <&tog 4>;
+            key-positions = <57 55>;
+            layers = <2>;
         };
     };
 
@@ -106,7 +112,7 @@
 &none         &none   &none   &none   &none   &none            &mmv MOVE_DOWN   &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &kp CAPSLOCK  &none   &none   &none   &none   &none            &mmv MOVE_LEFT   &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none             &kp ENTER
 &trans        &none   &none   &none   &none   &none            &mmv MOVE_RIGHT  &none          &kp BACKSPACE   &none           &kp DELETE       &kp BACKSLASH     &trans
-&kp C_MUTE    &trans  &trans  &trans  &trans  &kp BACKSPACE    &mkp LCLK        &trans         &trans          &trans          &trans           &trans
+&kp C_MUTE    &trans  &trans  &trans  &trans  &kp BACKSPACE    &mkp LCLK        &tog 3         &trans          &trans          &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -144,7 +150,7 @@
 &bt BT_CLR      &none         &none         &none         &none         &out OUT_BLE    &none  &rgb_ug RGB_ON                   &rgb_ug RGB_BRI                   &rgb_ug RGB_SPI                   &rgb_ug RGB_EFR                    &rgb_ug RGB_SAI                    &rgb_ug RGB_HUI
 &bt BT_CLR_ALL  &none         &none         &none         &none         &out OUT_USB    &none  &rgb_ug RGB_OFF                  &rgb_ug RGB_BRD                   &rgb_ug RGB_SPD                   &rgb_ug RGB_EFF                    &rgb_ug RGB_SAD                    &rgb_ug RGB_HUD
 &soft_off       &none         &none         &none         &none         &out OUT_TOG    &none  &rgb_ug RGB_TOG                  &none                             &none                             &none                              &none                              &soft_off
-&none           &sys_reset    &bootloader   &none         &trans        &none           &none  &none                            &trans                            &none                             &bootloader                        &sys_reset
+&none           &sys_reset    &bootloader   &none         &tog 4        &none           &none  &none                            &tog 4                            &none                             &bootloader                        &sys_reset
             >;
         };
     };
