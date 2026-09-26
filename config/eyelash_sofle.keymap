@@ -121,39 +121,16 @@
         };
 
         layer_2 {
-            display-name = "L-2";
+            display-name = "Fn+NP";
             bindings = <
-&kp ESCAPE       &kp F1      &kp F2  &kp F3  &kp F4     &kp F5    &msc SCRL_UP     &kp F6          &kp F7          &kp F8          &kp F9           &kp F10  &kp F11
-&kp PRINTSCREEN  &kp C_PP    &none   &none   &mkp MCLK  &none     &msc SCRL_DOWN   &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none    &kp F12
-&kp CAPSLOCK     &kp C_NEXT  &none   &none   &mkp LCLK  &none     &msc SCRL_LEFT   &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none    &kp ENTER
-&trans           &kp C_PREV  &none   &none   &mkp RCLK  &none     &msc SCRL_RIGHT  &none           &none           &none           &none            &none    &trans
-&kp C_MUTE       &trans      &trans  &trans  &trans     &trans    &mkp LCLK        &kp BACKSPACE   &trans          &trans          &trans           &trans
+&kp ESCAPE    &kp F1           &kp F2  &kp F3    &kp F4      &kp F5        &msc SCRL_UP     &kp F6           &kp F7     &kp F8     &kp F9     &kp F10       &kp F11
+&trans        &kp PRINTSCREEN  &none   &kp C_PP  &kp K_PREV  &kp C_NEXT    &msc SCRL_DOWN   &kp KP_MULTIPLY  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp F12
+&kp CAPSLOCK  &none            &none   &none     &none       &none         &msc SCRL_LEFT   &kp KP_DIVIDE    &kp KP_N5  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp ENTER
+&trans        &kp KP_NUM       &none   &none     &none       &none         &msc SCRL_RIGHT  &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &trans
+&kp C_MUTE    &trans           &trans  &trans    &trans      &trans        &mkp LCLK        &kp BACKSPACE    &trans     &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-        };
-
-        layer_np {
-            bindings = <
-&kp ESCAPE  &none   &none   &none   &none   &none     &trans  &none   &kp KP_NUMLOCK   &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS  &kp BACKSPACE
-&trans      &none   &none   &none   &none   &none     &trans  &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &kp DELETE
-&trans      &none   &none   &none   &none   &none     &trans  &none   &kp KP_NUMBER_5  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp ENTER
-&trans      &none   &none   &none   &none   &none     &trans  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &trans
-&trans      &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans           &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp KP_DOT
-            >;
-
-            label = "NumPad";
-        };
-
-        layer_cfg {
-            display-name = "[cfg]";
-            bindings = <
-&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(29,100,50)  &rgb_ug RGB_COLOR_HSB(59,100,50)  &rgb_ug RGB_COLOR_HSB(118,100,50)  &rgb_ug RGB_COLOR_HSB(232,100,50)  &rgb_ug RGB_COLOR_HSB(272,100,50)
-&bt BT_CLR      &none         &none         &none         &none         &out OUT_BLE    &none  &rgb_ug RGB_ON                   &rgb_ug RGB_BRI                   &rgb_ug RGB_SPI                   &rgb_ug RGB_EFR                    &rgb_ug RGB_SAI                    &rgb_ug RGB_HUI
-&bt BT_CLR_ALL  &none         &none         &none         &none         &out OUT_USB    &none  &rgb_ug RGB_OFF                  &rgb_ug RGB_BRD                   &rgb_ug RGB_SPD                   &rgb_ug RGB_EFF                    &rgb_ug RGB_SAD                    &rgb_ug RGB_HUD
-&soft_off       &none         &none         &none         &none         &out OUT_TOG    &none  &rgb_ug RGB_TOG                  &none                             &none                             &none                              &none                              &soft_off
-&none           &sys_reset    &bootloader   &none         &tog 4        &none           &none  &none                            &tog 4                            &none                             &bootloader                        &sys_reset
-            >;
         };
 
         layer_mouse {
@@ -167,6 +144,17 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_cfg {
+            display-name = "[cfg]";
+            bindings = <
+&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(29,100,50)  &rgb_ug RGB_COLOR_HSB(59,100,50)  &rgb_ug RGB_COLOR_HSB(118,100,50)  &rgb_ug RGB_COLOR_HSB(232,100,50)  &rgb_ug RGB_COLOR_HSB(272,100,50)
+&bt BT_CLR      &none         &none         &none         &none         &out OUT_BLE    &none  &rgb_ug RGB_ON                   &rgb_ug RGB_BRI                   &rgb_ug RGB_SPI                   &rgb_ug RGB_EFR                    &rgb_ug RGB_SAI                    &rgb_ug RGB_HUI
+&bt BT_CLR_ALL  &none         &none         &none         &none         &out OUT_USB    &none  &rgb_ug RGB_OFF                  &rgb_ug RGB_BRD                   &rgb_ug RGB_SPD                   &rgb_ug RGB_EFF                    &rgb_ug RGB_SAD                    &rgb_ug RGB_HUD
+&none           &soft_off     &none         &none         &none         &out OUT_TOG    &none  &rgb_ug RGB_TOG                  &none                             &none                             &none                              &soft_off                          &none
+&none           &sys_reset    &bootloader   &none         &tog 4        &none           &none  &none                            &tog 4                            &none                             &bootloader                        &sys_reset
+            >;
         };
     };
 };
