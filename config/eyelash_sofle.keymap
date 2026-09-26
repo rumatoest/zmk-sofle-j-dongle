@@ -117,7 +117,7 @@
         };
 
         layer_mouse {
-            display-name = "<”@~";
+            display-name = "<''@~";
 
             bindings = <
 &kp ESCAPE  &none   &none   &none   &none      &none     &kp UP_ARROW     &none           &none           &none           &none            &none   &none
