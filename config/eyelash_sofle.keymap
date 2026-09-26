@@ -117,7 +117,7 @@
         };
 
         layer_mouse {
-            display-name = "Mouse";
+            display-name = "ᓚᘏᕐᐷ";
             bindings = <
 &kp ESCAPE  &none   &none   &none   &none      &none     &kp UP_ARROW     &none           &none           &none           &none            &none   &none
 &trans      &none   &none   &none   &mkp MCLK  &none     &kp DOWN_ARROW   &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none   &none
