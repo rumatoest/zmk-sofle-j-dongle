@@ -148,7 +148,7 @@ layers:
   - PRINTSCREEN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:play-pause$$
-  - PREV
+  - $$mdi:skip-previous$$
   - $$mdi:skip-next$$
   - $$mdi:pan-down$$
   - KP MULTIPLY
