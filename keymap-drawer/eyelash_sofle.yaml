@@ -55,15 +55,15 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - Fn+NP
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-space$$
   - L-1
-  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:backspace$$', type: backspace}
   L-1:
   - $$mdi:keyboard-esc$$
