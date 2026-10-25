@@ -15,14 +15,20 @@ I'm still working on this layout. It has many empty spots for the left hand. Thi
 
 ### Base layer
 
-Right half is missing at least 1 keys colum.
-Thus puting all keys at their regular places is not possible.
+At least one keys column is missed on the right half.
+So puting all keys at their regular places is not possible.
 
-So Enter & Backspace were moved to different places but you can still press backspace wit an index finger.
+**Enter** & **Backspace** were moved to different place.
+But still **backspace** could be pressed with an index finger.
 
-Esc placed on an extremely rare used CapsLock place so it would not harm your typing.
+**Esc** placed on an extremely rarely used **CapsLock** position so it would not harm your typing.
 
-It also possible to replace Alt and Ctrl keys with some others but IMHO it is better to use modifiers with both hands.
+It could be looks like **Alt** and **Ctrl** are swapped but it is not.
+**Alt** is on it's regular place related to the letters.
+Considering that you have 6 different keys to press with your thumbs instead of a single space bar
+having **Ctrl** in this area is not a big deal.
+
+Maybe right Alt could be replaced with something else but I will leave it symmetrical for now.
 
 ### Layer 1
 
