@@ -164,7 +164,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-left$$
-  - KP DIVIDE
+  - KP 0
   - KP 4
   - KP 5
   - KP 6
@@ -177,7 +177,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-right$$
-  - KP 0
+  - KP SLASH
   - KP 1
   - KP 2
   - KP 3
