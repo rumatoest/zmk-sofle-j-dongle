@@ -36,14 +36,16 @@ This one contains missing keys from a base layer and arrow keys.
 
 Enter & Esc are located in familiar places with CapsLock as well.
 
-Thought that it is more convinient to use "_","+","{","}" without Shift so there are separate keys for a left hand.
-
 Delete is present on this layer with an another Backspace.
+
+Left half is almost empty.
 
 ### Layer 2
 
 This is mostly for your Fn buttons and a NumPad.
 Num pad layout is not exacly the same but it is better than having a separate layer for it.
+
+I think it is more convenient to use "_","+","{","}" without Shift so there are separate keys for the left hand.
 
 Esc, Enter & CapsLock are still on familiar places.
 
