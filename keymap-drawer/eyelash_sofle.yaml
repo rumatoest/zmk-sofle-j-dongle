@@ -145,11 +145,11 @@ layers:
   - F10
   - F11
   - {t: '$$mdi:transfer$$', type: trans}
-  - (
-  - )
   - _
   - +
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - (
+  - )
+  - {t: \, s: '|'}
   - $$mdi:pan-down$$
   - KP MULTIPLY
   - KP 7
@@ -158,11 +158,11 @@ layers:
   - KP MINUS
   - F12
   - $$mdi:apple-keyboard-caps$$
-  - '{'
-  - '}'
   - KP MINUS
   - KP EQUAL
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '{'
+  - '}'
+  - '|'
   - $$mdi:pan-left$$
   - KP 0
   - KP 4
@@ -171,10 +171,10 @@ layers:
   - KP PLUS
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
+  - <
+  - '>'
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - '|'
-  - {t: \, s: '|'}
   - KP NLCK
   - $$mdi:pan-right$$
   - KP SLASH
